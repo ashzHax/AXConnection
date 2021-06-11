@@ -1,7 +1,0 @@
-name: AXConnection
-main: "axc.AXConnection.AXConnection"
-version: "1.0.0"
-author: "ashzHax"
-api-version: 1.17
-prefix: AXConnection
-description: "User connection management."
