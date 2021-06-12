@@ -1,0 +1,4 @@
+messages:
+  player_join: "{GRAY}{BOLD}[{GREEN}{BOLD}+{GRAY}{BOLD}] {YELLOW}{USERNAME} {GRAY}joined"
+  player_quit: "{GRAY}{BOLD}[{RED}{BOLD}-{GRAY}{BOLD}] {YELLOW}{USERNAME} {GRAY}quit"
+  
