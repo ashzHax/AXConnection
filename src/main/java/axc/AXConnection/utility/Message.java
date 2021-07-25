@@ -9,6 +9,8 @@ public class Message {
     public enum LogType {
         PLAYER_JOIN,
         PLAYER_QUIT,
+        COMMAND_INVALID_ARGUMENT_TYPE,
+        COMMAND_REQUIRE_ARGUMENTS,
     };
 
     private static String convertColorString(String target)
@@ -67,6 +69,16 @@ public class Message {
                 returnString = plugin.getConfig().getString("messages.player_quit");
 
                 returnString = convertPlayernameString(returnString, playerName);
+                returnString = convertColorString(returnString);
+                break;
+            }
+            case COMMAND_INVALID_ARGUMENT_TYPE: {
+                returnString = plugin.getConfig().getString("messages.invalid_argument_type");
+                returnString = convertColorString(returnString);
+                break;
+            }
+            case COMMAND_REQUIRE_ARGUMENTS: {
+                returnString = plugin.getConfig().getString("messages.require_arguments");
                 returnString = convertColorString(returnString);
                 break;
             }

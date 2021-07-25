@@ -1,4 +1,4 @@
-package axc.AXConnection.events;
+package axc.AXConnection.event;
 
 import axc.AXConnection.AXConnection;
 import axc.AXConnection.utility.Message;
@@ -18,6 +18,10 @@ public class PlayerJoin implements Listener {
     public void HandlePlayerJoinEvent(PlayerJoinEvent event)
     {
         event.setJoinMessage(Message.getConfigMessage(plugin, Message.LogType.PLAYER_JOIN, event.getPlayer().getName()));
+//        plugin.getServer().dispatchCommand(plugin.getServer().getConsoleSender(), "fcp pause");
+//        if(event.getPlayer().getName() == "ashzHax") {
+//            event.setJoinMessage("");
+//        }
     }
 
 }

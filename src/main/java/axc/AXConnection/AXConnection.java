@@ -1,6 +1,6 @@
 package axc.AXConnection;
 
-import axc.AXConnection.events.*;
+import axc.AXConnection.event.*;
 import org.bukkit.plugin.java.JavaPlugin;
 
 @SuppressWarnings("unused")
